@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>different-name-generator</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #milu {
+            text-align: center;
+            color: rgb(92 199 158);
+            margin-top: 38%;
+            font-size: 38px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="milu">
+        <b>Open the console page to see the different name</b>
+    </div>
+
+    <script>
+        let rand = Math.random()
+        let first, sec, third;
+        if (rand < 0.33) {
+            first = "milan "
+        }
+        else if (rand < 0.66 && rand >= 0.33) {
+            first = "madhu"
+        }
+        else {
+            first = "gyana"
+        }
+        rand = Math.random()
+        //lets generate the second  word
+        if (rand < 0.33) {
+            sec = "dipti"
+        }
+        else if (rand < 0.66 && rand >= 0.33) {
+            sec = "sujit"
+        }
+        else {
+            sec = "barsha"
+        }
+        rand = Math.random()
+        //lets generate third third word
+        if (rand < 0.33) {
+            third = "ruchi"
+        }
+        else if (rand < 0.66 && rand >= 0.33) {
+            third = "rajesh"
+        }
+        else {
+            third = "payal"
+        }
+        console.log(`${first} ${sec} ${third}`);
+    </script>
+</body>
+
+</html>
